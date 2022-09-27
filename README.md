@@ -10,6 +10,10 @@ Please read this guide before creating a new issue, thanks!
 
 # Frequently Asked Questions
 
+**Q: Can I use it offline? **
+
+- A: Yes, as long as you have added it to the Home Screen.
+
 **Q: There is no sound.**
 
 - A: The "Silent Switch" of your device should be "Off". If sound is still not working, please try to restart the app/add another icon on Home Screen/reboot the device.
