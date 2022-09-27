@@ -10,7 +10,8 @@ Please read this guide before creating a new issue, thanks!
 
 # Frequently Asked Questions
 
-**Q: Can I use it offline? **
+
+**Q: Can I use it offline?**
 
 - A: Yes, as long as you have added it to the Home Screen.
 
