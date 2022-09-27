@@ -62,5 +62,5 @@ s: X
 q: L
 w: R
 enter: Start
-space: Select
+shift: Select
 ```
