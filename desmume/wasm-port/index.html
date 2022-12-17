@@ -92,6 +92,7 @@
         <div id="loading">Loading...</div>
         <div id="loadrom" hidden>
             <input id="rom" type="file">
+            <button onclick="tryInitSound()">Init Sound</button>
         </div>
         <a target="_blank" href="https://github.com/44670/desmume-wasm">https://github.com/44670/desmume-wasm</a>
         <p>Ver. 20210913</p>
@@ -114,14 +115,14 @@
         <div class="vk-rect vk" data-k="start">+</div>
         <div class="vk-round vk" data-k="stick" id="vk-stick"></div>
     </div>
-    <div style="z-index: 2;position: absolute;top: 0px;" id="fps" hidden></div>
+    <div style="z-index: 2;position: absolute;top: 0px;" id="fps"></div>
     <div id="msg-layer" hidden>
         <p id="msg-text"></p>
     </div>
     <canvas id="top" width="256" height="192"></canvas><br>
     <canvas id="bottom" width="256" height="192"></canvas><br>
     <script src="localforage.js"></script>
-    <script src="build/nds.js"></script>
+    <script src="main.js"></script>
     <script>
 
         var plugins = {}
@@ -473,7 +474,7 @@
                     scriptProcessor.onaudioprocess = processAudio
                     scriptProcessor.connect(audioContext.destination)*/
                 } else {
-                    await audioContext.audioWorklet.addModule("/audio-worklet.js")
+                    await audioContext.audioWorklet.addModule("audio-worklet.js")
                     audioWorkletNode = new AudioWorkletNode(audioContext, "my-worklet", { outputChannelCount: [2] })
                     audioWorkletNode.connect(audioContext.destination)
                 }
