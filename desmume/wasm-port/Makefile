@@ -92,7 +92,7 @@ main.js: $(FILES)
 clean:
 	@echo "Cleaning"
 	@echo $(FILES)
-	rm -fr *.o */*.o */*/*.o */*/*/*.o */*/*/*/*.o
+	rm -fr *.o ../src/*.o ../src/*/*.o ../src/*/*/*.o ../src/*/*/*/*.o ../src/*/*/*/*/*.o
 
 cleandata:
 	@echo "Cleaning data"
